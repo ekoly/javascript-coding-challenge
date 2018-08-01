@@ -1,0 +1,15 @@
+# dot files
+.build/
+.DS_Store
+.esm-cache
+.nyc_output
+.tmp/
+.vscode
+
+# debug
+npm-debug.log*
+yarn-error.log*
+
+# folders
+dist*/
+node_modules/
