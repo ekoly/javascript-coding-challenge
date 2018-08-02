@@ -36,7 +36,7 @@
 
     ### Comma delimited `uid`s
 
-    ``` http
+    ```http
     POST /data?uid=10,20,30
 
     [
