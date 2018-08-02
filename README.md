@@ -16,6 +16,7 @@
 
     - rong_sen.ng@zumata.com
     - weijin.ho@zumata.com
+    
 4. Thank you and happy coding. :tada:
 
 ## Technical Challenges
@@ -35,7 +36,7 @@
 
     ### Comma delimited `uid`s
 
-    ```http
+    ``` http
     POST /data?uid=10,20,30
 
     [
