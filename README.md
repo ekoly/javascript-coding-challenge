@@ -11,7 +11,7 @@
 ## How to submit
 
 1. You are required to have a [Bitbucket][bitbucket-url] to submission the coding test. Go create one if you haven't already.
-2. Then, create a privte repo to host the assignment and commit all the changes to that repo.
+2. Then, create a privte repo to host the assignment and commit all the changes to that repo. **Do note that you need commit the whole untouched project first (also known as `initial commit`) right after you do a cloning from the original private repo, this ensures that we can assess your submission based on the changes you committed to your own private repo. See [NEED_HELP_IN_GIT.md][need-help-in-git-url] if you don't know how to `git`.**
 3. Grant access to the following individuals to assess your submission once you're done:
 
     - rong_sen.ng@zumata.com
@@ -105,3 +105,4 @@
 
 [csrf-token-url]: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
 [bitbucket-url]: https://bitbucket.org/
+[need-help-in-git-url]: /NEED_HELP_IN_GIT.md
