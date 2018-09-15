@@ -14,52 +14,52 @@
 2. Then, create a privte repo to host the assignment and commit all the changes to that repo. **Do note that you need commit the whole untouched project first (also known as `initial commit`) right after you do a cloning from the original private repo, this ensures that we can assess your submission based on the changes you committed to your own private repo. See [NEED_HELP_IN_GIT.md][need-help-in-git-url] if you don't know how to `git`.**
 3. Grant access to the following individuals to assess your submission once you're done:
 
-    - rong_sen.ng@zumata.com
-    - weijin.ho@zumata.com
-    
-4. Thank you and happy coding. :tada:
+- jessica.spokoyny@zumata.com
+- weijin.ho@zumata.com
+
+1. Thank you and happy coding. :tada:
 
 ## Technical Challenges
 
 1. `POST /data` is a simple endpoint that accepts a request paramter `uid` and returns any user data whose `id` matches the value of `uid`. Refactor `uid` so that it can accept an array of strings and return multiple user data.
 
-    ### Single valued `uid`
+### Single valued `uid`
 
-    ```http
-    POST /data?uid=10
+```http
+POST /data?uid=10
 
-    {
-      "id": 10
-      "message": "Aloha",
-    }
-    ```
+{
+  "id": 10
+  "message": "Aloha",
+}
+```
 
-    ### Comma delimited `uid`s
+### Comma delimited `uid`s
 
-    ```http
-    POST /data?uid=10,20,30
+```http
+POST /data?uid=10,20,30
 
-    [
-      { "id": 10, "message": "Aloha" },
-      { "id": 20, "message": "Hello, World!" },
-      { "id": 30, "message": "Bonjour" }
-    ]
-    ```
+[
+  { "id": 10, "message": "Aloha" },
+  { "id": 20, "message": "Hello, World!" },
+  { "id": 30, "message": "Bonjour" }
+]
+```
 
-    ### Comma delimited `uid`s with whitespaces
+### Comma delimited `uid`s with whitespaces
 
-    ** Note that whitespace may present after a comma.
+_** Note that whitespace may present after a comma._
 
-    ```http
-    POST /data?uid=20, 30
+```http
+POST /data?uid=20, 30
 
-    [
-      { "id": 20, "message": "Hello, World!" },
-      { "id": 30, "message": "Bonjour" }
-    ]
-    ```
-    
-2. Create a new endpoint named `GET /form` to render a HTML form that contains the following fields:
+[
+  { "id": 20, "message": "Hello, World!" },
+  { "id": 30, "message": "Bonjour" }
+]
+```
+
+1. Create a new endpoint named `GET /form` to render a HTML form that contains the following fields:
 
     ```js
     {
@@ -71,10 +71,10 @@
       _csrf: '<UUID>', // This should be a UUID-based token.
     }
     ```
-    
+
     A standard HTML form should always render with a [CSRF token][csrf-token-url] to prevent CSRF attacks.
 
-3. Create a new endpoint for form submission named `POST /form-submission` when the user chooses to submit a filled form which can be accessed from `GET /form`. User should receive a message after the form submisison.
+2. Create a new endpoint for form submission named `POST /form-submission` when the user chooses to submit a filled form which can be accessed from `GET /form`. User should receive a message after the form submisison.
 
     _**Do note that is the form submission is not done via AJAX or `fetch`.**_
 
@@ -93,13 +93,13 @@
 
     - Success message after form submission
 
-      ```
+      ```txt
       Form submitted successfully
       ```
 
     This aims to test candidate's ability to retrieve the form data from all the fields in a submitted form.
-    
-4. `POST /mocky-api` is completely written using idomatic ES5 syntax. Do a refactoring on the API so that it uses the latest and greatest of ES2015+ features for the sake of readability.
+
+3. `POST /mocky-api` is completely written using idomatic ES5 syntax. Do a refactoring on the API so that it uses the latest and greatest of ES2015+ features for the sake of readability.
 
 ## Good luck! :smile:
 
