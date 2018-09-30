@@ -47,7 +47,8 @@ app.post('/mocky-api', function (req, res) {
 app.post('/data', (req, res) => {
   // TODO: Refactor so that uid can be string or an array of strings
   const { uid } = req.query;
-  const d = users.users.find(n => n.id === +uid);
+  var uid_arr = uid.split(',').map(s => +s.trim());
+  const d = users.users.filter(n => uid_arr.includes(n.id));
   
   return send(res, 200, d, { 'Content-Type': 'application/json' });
 });
