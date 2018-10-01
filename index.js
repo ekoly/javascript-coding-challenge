@@ -6,7 +6,6 @@ import polka from 'polka';
 import send from '@polka/send-type';
 import cors from 'cors';
 import fetch from 'node-fetch';
-import fs from 'fs';
 import uuid from 'uuid/v4';
 
 import html from './html.js';

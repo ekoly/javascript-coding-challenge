@@ -18,8 +18,7 @@
     "cors": "^2.8.4",
     "uuid": "^3.3.2",
     "lorem-ipsum": "^1.0.5",
-    "node-fetch": "^2.2.0",
-    "fs": ""
+    "node-fetch": "^2.2.0"
   },
   "engines": {
     "node": "10.x"
